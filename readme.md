@@ -1,7 +1,8 @@
 
 # EyePop.AI Text Scanner Mask
 
-This is a computer vision powered label scanner for detecting alcohol bottel brands and quickly pulling up cocktail recipes. 
+This is a computer vision powered label scanner for detecting alcohol bottel brands and quickly pulling up cocktail recipes based on detected text.
+It draws the text as an overlay, just point your camera and snap an image of the bottles. 
 This project allows you to select a camera input, draw a mask over the portion of the camera feed you wish to be detected, and easily capture a picture of your feed and send it to EyePop.
 
 ## Installation
