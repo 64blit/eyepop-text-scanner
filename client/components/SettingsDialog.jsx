@@ -3,18 +3,12 @@ import React, { useEffect, useState } from "react";
 
 const SettingsDialog = React.forwardRef((props, ref) =>
 {
-    const [ popId, setPopId ] = useState('935cdacd682445119ac5059097148de9');
-    const [ popSecret, setPopSecret ] = useState('AAGisBhdNU2Q8LGWTq4suaD2Z0FBQUFBQm1NOWN0NVVQX2JCWjNuazBMV0ctLTk1dzY2djVGeDVuZk43MmJ0bWlvNXpBN3VkeDhja1BOb1F5NWtxRnRheDB6emxCNzVJd3J6RGtnVXJocTdQcHJMenRxV2VmTmpwb3VEOUo1RkxoSTZ0bkZqUGM9');
-
-    useEffect(() =>
-    {
-        if (popId) { props.setPopUUID(popId); }
-        if (popSecret) { props.setPopSecret(popSecret); }
-    }, [ popId, popSecret ]);
+    const [ popId, setPopId ] = useState(null);
+    const [ popSecret, setPopSecret ] = useState(null);
 
     return (
         <dialog id="my_modal_2" ref={ref} className="modal">
-            <div className="modal-box bg-black text-white flex flex-col w-7/12 max-w-5xl justify-center justify-items-center align-middle items-center ">
+            <div className="modal-box bg-gray-800 text-white flex flex-col w-7/12 max-w-5xl justify-center justify-items-center align-middle items-center ">
                 {props.showModelSelector && <ModelSelector className={`h-full text-4xl`} setModel={props.setModel} />}
 
                 <button className="btn btn-primary text-4xl m-5"
@@ -23,7 +17,7 @@ const SettingsDialog = React.forwardRef((props, ref) =>
                         window.open('https://dashboard.eyepop.ai', '_blank')
                     }
                     }>
-                    <div className="text-black text-4xl">Visit EyePop.ai</div>
+                    <div className="text-4xl text-white">Visit EyePop.ai</div>
                 </button>
 
                 <div className="flex flex-col w-full gap-5">

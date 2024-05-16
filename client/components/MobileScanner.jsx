@@ -136,6 +136,7 @@ const MobileScanner = ({ }) =>
             } catch (error)
             {
                 console.error('Error parsing mobile data:', error);
+                settingsRef.current.showModal();
                 alert('Pop Failed to load. Verify UUID', error);
                 // window.location.reload();
             } finally
