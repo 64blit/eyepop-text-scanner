@@ -10,6 +10,49 @@ import { ResultsOverlay } from '../ResultsOverlay';
 
 let isDrawing = false;
 
+const names = [
+    "Tito's",
+    "Jack Daniel's",
+    "Jameson",
+    "Grey Goose",
+    "Patrón",
+    "Hendrick's",
+    "Absolut",
+    "Bacardi",
+    "Johnnie Walker",
+    "Smirnoff",
+    "Hennessy",
+    "Maker's Mark",
+    "Jim Beam",
+    "Jose Cuervo",
+    "Belvedere",
+    "Cîroc",
+    "Glenfiddich",
+    "Captain Morgan",
+    "Crown Royal",
+    "Ketel One",
+    "Old Harbor Distilling Co.",
+    "Cutwater Spirits",
+    "Malahat Spirits Co.",
+    "Liberty Call Distilling",
+    "You & Yours Distilling Co.",
+    "ReBru Spirits",
+    "619 Spirits",
+    "San Diego Distillery",
+    "Henebery Spirits",
+    "Malahat Spirits Co.",
+    "Pacific Spirits",
+    "Oceanside Distillers",
+    "Seven Caves Spirits",
+    "Ampersand Distilling",
+    "Copper Collar Distillery",
+    "The California Spirits Company",
+    "Swinford Spirits",
+    "Perfect Soul Whiskey Co.",
+    "Misadventure & Co.",
+    "Shadow Ridge Spirits Co."
+];
+
 const MobileScanner = ({ popNameRef, resultCanvasRef, videoRef }) =>
 {
 
@@ -301,49 +344,6 @@ const MobileScanner = ({ popNameRef, resultCanvasRef, videoRef }) =>
 
     const fuzzyDetectName = (maskRect, resultObject, croppedImage) =>
     {
-        const names = [
-            "Tito's",
-            "Jack Daniel's",
-            "Jameson",
-            "Grey Goose",
-            "Patrón",
-            "Hendrick's",
-            "Absolut",
-            "Bacardi",
-            "Johnnie Walker",
-            "Smirnoff",
-            "Hennessy",
-            "Maker's Mark",
-            "Jim Beam",
-            "Jose Cuervo",
-            "Belvedere",
-            "Cîroc",
-            "Glenfiddich",
-            "Captain Morgan",
-            "Crown Royal",
-            "Ketel One",
-            "Old Harbor Distilling Co.",
-            "Cutwater Spirits",
-            "Malahat Spirits Co.",
-            "Liberty Call Distilling",
-            "You & Yours Distilling Co.",
-            "ReBru Spirits",
-            "619 Spirits",
-            "San Diego Distillery",
-            "Henebery Spirits",
-            "Malahat Spirits Co.",
-            "Pacific Spirits",
-            "Oceanside Distillers",
-            "Seven Caves Spirits",
-            "Ampersand Distilling",
-            "Copper Collar Distillery",
-            "The California Spirits Company",
-            "Swinford Spirits",
-            "Perfect Soul Whiskey Co.",
-            "Misadventure & Co.",
-            "Shadow Ridge Spirits Co."
-        ];
-
         let allLabels = [];
 
         setCroppedImage(croppedImage);

@@ -3,7 +3,7 @@ import React, { useEffect, useState } from "react";
 
 const SettingsDialog = React.forwardRef((props, ref) =>
 {
-    const [ popId, setPopId ] = useState('95581bc77b2b4ce498b95ed545b9e860');
+    const [ popId, setPopId ] = useState('935cdacd682445119ac5059097148de9');
     const [ popSecret, setPopSecret ] = useState('AAGisBhdNU2Q8LGWTq4suaD2Z0FBQUFBQm1NOWN0NVVQX2JCWjNuazBMV0ctLTk1dzY2djVGeDVuZk43MmJ0bWlvNXpBN3VkeDhja1BOb1F5NWtxRnRheDB6emxCNzVJd3J6RGtnVXJocTdQcHJMenRxV2VmTmpwb3VEOUo1RkxoSTZ0bkZqUGM9');
 
     useEffect(() =>
