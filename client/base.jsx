@@ -1,10 +1,12 @@
-import React from "react";
-import { Main } from "./components/Main.jsx";
+import React, { useRef } from "react";
 import "./styles.css";
+import MobileScanner from "./components/ui/MobileScanner.jsx";
 
 export function createApp()
 {
+
     return (
-        <Main />
-    )
+        <MobileScanner />
+    );
+
 }

@@ -6,7 +6,7 @@ import { Render2d } from '@eyepop.ai/eyepop-render-2d';
 import MaskCanvas, { drawGradient } from './MaskCanvas';
 import SettingsDialog from './SettingsDialog';
 import { search, fuzzy } from 'fast-fuzzy';
-import { ResultsOverlay } from '../ResultsOverlay';
+import { ResultsOverlay } from './ResultsOverlay';
 
 let isDrawing = false;
 
@@ -53,8 +53,12 @@ const names = [
     "Shadow Ridge Spirits Co."
 ];
 
-const MobileScanner = ({ popNameRef, resultCanvasRef, videoRef }) =>
+const MobileScanner = ({ }) =>
 {
+
+    const resultCanvasRef = useRef();
+    const videoRef = useRef();
+    const popNameRef = useRef();
 
     const sharedClass = 'object-contain h-full w-full d-block aboslute flex-none';
     const marginsStyle = 'p-4 mt-[2rem] ml-5 mr-5 w-[40rem] md:ml-[10rem] md:mr-[10rem]';

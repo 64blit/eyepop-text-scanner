@@ -3,8 +3,6 @@ import React, { useState, useEffect, useRef } from "react";
 
 export const ResultsOverlay = ({ title, labelsList }) =>
 {
-
-
     return (
         <>
             {labelsList.length > 0 &&

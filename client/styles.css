@@ -10,6 +10,7 @@
 * {
   box-sizing: border-box;
   color-scheme: dark;
+  overscroll-behavior: none;
 }
 
 html,
@@ -34,4 +35,3 @@ body,
 body {
   color: black;
 }
-
