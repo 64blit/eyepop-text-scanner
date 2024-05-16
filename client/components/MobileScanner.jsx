@@ -84,12 +84,6 @@ const MobileScanner = ({ }) =>
     let startX, startY;
 
 
-    const setModel = (model) =>
-    {
-        console.log('setModel', model);
-        eyePopEndpoint.changePopComp(inferStrings[ model ])
-    }
-
     useEffect(() =>
     {
         if (webcamDevices.length > 0) return;
@@ -334,20 +328,20 @@ const MobileScanner = ({ }) =>
 
     }
 
-    const isOverlapping = (rect1, rect2) =>
-    {
-        if (rect1.x < rect2.x + rect2.width &&
-            rect1.x + rect1.width > rect2.x &&
-            rect1.y < rect2.y + rect2.height &&
-            rect1.y + rect1.height > rect2.y)
-        {
-            return true;
-        }
-        return false;
-    }
-
     const fuzzyDetectName = (maskRect, resultObject, croppedImage) =>
     {
+        const isOverlapping = (rect1, rect2) =>
+        {
+            if (rect1.x < rect2.x + rect2.width &&
+                rect1.x + rect1.width > rect2.x &&
+                rect1.y < rect2.y + rect2.height &&
+                rect1.y + rect1.height > rect2.y)
+            {
+                return true;
+            }
+            return false;
+        }
+
         let allLabels = [];
 
         setCroppedImage(croppedImage);
@@ -437,7 +431,6 @@ const MobileScanner = ({ }) =>
         });
 
     }
-
 
     const getCanvasSize = (canvas, parentWidth, parentHeight) =>
     {
@@ -690,7 +683,7 @@ const MobileScanner = ({ }) =>
                     </div>
                 )}
 
-                <SettingsDialog ref={settingsRef} setModel={setModel} showModelSelector={false} setPopUUID={setPopUUID} setPopSecret={setPopSecret} />
+                <SettingsDialog ref={settingsRef} showModelSelector={false} setPopUUID={setPopUUID} setPopSecret={setPopSecret} />
 
                 {!loading && (
                     <div className="bg-blue-400 flex h-[8rem] w-[8rem] justify-center m-5 items-center rounded-full shadow-2xl p-5 z-10 cursor-pointer transition-all duration-200 hover:animate-pulse hover:scale-110 active:scale-125"
