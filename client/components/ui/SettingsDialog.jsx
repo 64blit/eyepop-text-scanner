@@ -6,20 +6,6 @@ const SettingsDialog = React.forwardRef((props, ref) =>
     const [ popId, setPopId ] = useState('95581bc77b2b4ce498b95ed545b9e860');
     const [ popSecret, setPopSecret ] = useState('AAGisBhdNU2Q8LGWTq4suaD2Z0FBQUFBQm1NOWN0NVVQX2JCWjNuazBMV0ctLTk1dzY2djVGeDVuZk43MmJ0bWlvNXpBN3VkeDhja1BOb1F5NWtxRnRheDB6emxCNzVJd3J6RGtnVXJocTdQcHJMenRxV2VmTmpwb3VEOUo1RkxoSTZ0bkZqUGM9');
 
-    // useEffect(() =>
-    // {
-    //     if (popSecret == '' || popId == '' || !popSecret || !popId) { return; }
-
-    //     fetch('/eyepop/set_credentials', {
-    //         method: 'POST',
-    //         headers: {
-    //             'Content-Type': 'application/json'
-    //         },
-    //         body: JSON.stringify({ popId: popId, secretKey: popSecret })
-    //     }).then(res => res.json()).then(data => console.log(data));
-
-    // }, [ popId, popSecret ]);
-
     useEffect(() =>
     {
         if (popId) { props.setPopUUID(popId); }
@@ -28,7 +14,7 @@ const SettingsDialog = React.forwardRef((props, ref) =>
 
     return (
         <dialog id="my_modal_2" ref={ref} className="modal">
-            <div className="modal-box text-white flex flex-col w-7/12 max-w-5xl justify-center justify-items-center align-middle items-center ">
+            <div className="modal-box bg-black text-white flex flex-col w-7/12 max-w-5xl justify-center justify-items-center align-middle items-center ">
                 {props.showModelSelector && <ModelSelector className={`h-full text-4xl`} setModel={props.setModel} />}
 
                 <button className="btn btn-primary text-4xl m-5"

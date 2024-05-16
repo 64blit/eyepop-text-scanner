@@ -1,6 +1,6 @@
 import Fastify from 'fastify';
 import FastifyVite from '@fastify/vite';
-import EyePop from '@eyepop.ai/eyepop';
+import { EyePop } from "@eyepop.ai/eyepop";
 import process from 'process';
 
 
@@ -287,4 +287,6 @@ server.get('/eyepop/session', async (req, reply) =>
 });
 
 await server.vite.ready()
-await server.listen({ port: 8080 })
+const PORT = process.env.PORT || 8080;
+await server.listen({ port: PORT })
+console.log(`Server is running on http://localhost:${PORT}`);  
