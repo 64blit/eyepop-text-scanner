@@ -3,8 +3,16 @@ import React, { useEffect, useState } from "react";
 
 const SettingsDialog = React.forwardRef((props, ref) =>
 {
-    const [ popId, setPopId ] = useState(null);
-    const [ popSecret, setPopSecret ] = useState(null);
+    const [ popId, setPopId ] = useState("1b69350bd8934d02971028a07b4b11ba");
+    const [ popSecret, setPopSecret ] = useState("AAFIJnxPs5Sp97JK1xrmfBmCZ0FBQUFBQm1YNkVOWV9aSVN2V3JUaEdnanRWSnZxT2tQU095MXZ3aUM4MjE3cUM2SGoxUnZTeUZaVU9LNGNqUlhPcThORHMxWEtxVnFnRXlvZG5mbUdwWHdxM0N3RW1yamlTVkp0Ti10WWtBN3gwQVFjelRsdGM9");
+
+    useEffect(() =>
+    {
+        if (!popId || !popSecret) return;
+
+        props.setPopUUID(popId);
+        props.setPopSecret(popSecret);
+    }, [ popId, popSecret ]);
 
     return (
         <dialog id="my_modal_2" ref={ref} className="modal">
@@ -38,6 +46,7 @@ const SettingsDialog = React.forwardRef((props, ref) =>
                     }
                 </div>
             </div>
+
             <form method="dialog" className="modal-backdrop">
                 <button>close</button>
             </form>
