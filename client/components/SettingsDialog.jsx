@@ -4,7 +4,7 @@ import React, { useEffect, useState } from "react";
 const SettingsDialog = React.forwardRef((props, ref) =>
 {
     const [ popId, setPopId ] = useState("1b69350bd8934d02971028a07b4b11ba");
-    const [ popSecret, setPopSecret ] = useState("AAFIJnxPs5Sp97JK1xrmfBmCZ0FBQUFBQm1YNkVOWV9aSVN2V3JUaEdnanRWSnZxT2tQU095MXZ3aUM4MjE3cUM2SGoxUnZTeUZaVU9LNGNqUlhPcThORHMxWEtxVnFnRXlvZG5mbUdwWHdxM0N3RW1yamlTVkp0Ti10WWtBN3gwQVFjelRsdGM9");
+    const [ popSecret, setPopSecret ] = useState("AAHLdBurieFiHNf5A3B1INxkZ0FBQUFBQm1kYmg0QTBMejRwU1dBUVg1bzBuZU9FU0N4VTI1XzNKbGUwMTM5VWp5WGdlSHM0VWFsR3RoU3dSWE56TWRUdlhiTS1aTVFCRDlJY1I0RlhWaEM2RFpKVFdCRVNvQWY3MEU0LWhVbllrVGlqVWJNQXc9");
 
     useEffect(() =>
     {
@@ -44,6 +44,7 @@ const SettingsDialog = React.forwardRef((props, ref) =>
                             Save
                         </button>
                     }
+
                 </div>
             </div>
 
