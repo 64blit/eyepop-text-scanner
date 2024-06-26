@@ -3,8 +3,8 @@ import React, { useEffect, useState } from "react";
 
 const SettingsDialog = React.forwardRef((props, ref) =>
 {
-    const [ popId, setPopId ] = useState("1b69350bd8934d02971028a07b4b11ba");
-    const [ popSecret, setPopSecret ] = useState("AAHLdBurieFiHNf5A3B1INxkZ0FBQUFBQm1kYmg0QTBMejRwU1dBUVg1bzBuZU9FU0N4VTI1XzNKbGUwMTM5VWp5WGdlSHM0VWFsR3RoU3dSWE56TWRUdlhiTS1aTVFCRDlJY1I0RlhWaEM2RFpKVFdCRVNvQWY3MEU0LWhVbllrVGlqVWJNQXc9");
+    const [ popId, setPopId ] = useState("013edeb05f234adcb83c3ed5a2709361");
+    const [ popSecret, setPopSecret ] = useState("AAF_Aji3Q0n6lOgHum-VFPb_Z0FBQUFBQm1mRDJQSTVZQUk1VWNSNXRDMXRmZnZYdHIyUW5WVnR0SFphdkRMV1VPRkZXbTBnVEo2YTZpUHVlOHhCLVR3bTlZeGJpXy1FWFNxLXRFLTIxZVhUbHRUSmZUN2w2WW43RXNrWDRIa0lwM2NXQzE5MlU9");
 
     useEffect(() =>
     {
