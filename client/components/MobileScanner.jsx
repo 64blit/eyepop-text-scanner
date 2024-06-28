@@ -55,6 +55,7 @@ const names = [
     "General Mills Old Fashioned Oatmeal",
     "Cinnamon Toast Crunch",
     "Quaker Oats",
+    "truwhip",
 ];
 
 const MobileScanner = ({ }) =>
