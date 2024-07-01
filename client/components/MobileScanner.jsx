@@ -56,6 +56,7 @@ const names = [
     "Cinnamon Toast Crunch",
     "Quaker Oats",
     "truwhip",
+    "haagen-dazs vanilla",
 ];
 
 const MobileScanner = ({ }) =>

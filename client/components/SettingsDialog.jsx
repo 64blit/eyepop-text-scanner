@@ -4,7 +4,7 @@ import React, { useEffect, useState } from "react";
 const SettingsDialog = React.forwardRef((props, ref) =>
 {
     const [ popId, setPopId ] = useState("013edeb05f234adcb83c3ed5a2709361");
-    const [ popSecret, setPopSecret ] = useState("AAF_Aji3Q0n6lOgHum-VFPb_Z0FBQUFBQm1mRDJQSTVZQUk1VWNSNXRDMXRmZnZYdHIyUW5WVnR0SFphdkRMV1VPRkZXbTBnVEo2YTZpUHVlOHhCLVR3bTlZeGJpXy1FWFNxLXRFLTIxZVhUbHRUSmZUN2w2WW43RXNrWDRIa0lwM2NXQzE5MlU9");
+    const [ popSecret, setPopSecret ] = useState("AAHh2ETrrlMbm9--EyjRfMzWZ0FBQUFBQm1ndTBhd3NlbGpWOWVBdW1JRVhTVW1ITU5DTFJDN2FfZUNVM3g0Ti13Z0tTX0Z2aF9JdkpjazZlN0d4ZHV4NEoyRExYQTAzb25menhrZV9paXk1UU9Wd3dIUjZpWkt6WE1BTXhEMGNDVHRjZ0xIbk09");
 
     useEffect(() =>
     {
